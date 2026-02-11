@@ -1,0 +1,17 @@
+services:
+  db:
+    image: postgres:18
+    container_name: pg18
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: lab
+    ports:
+      - "5434:5432"
+    volumes:
+      - pg18_data:/var/lib/postgresql/
+      - ./data/raw:/data/raw:ro
+    restart: unless-stopped
+
+volumes:
+  pg18_data:

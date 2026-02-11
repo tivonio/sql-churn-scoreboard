@@ -1,0 +1,58 @@
+# ----------------------------
+# Python
+# ----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ----------------------------
+# Virtual environments
+# ----------------------------
+.venv/
+venv/
+ENV/
+env/
+.conda/
+
+# ----------------------------
+# Jupyter / notebooks
+# ----------------------------
+.ipynb_checkpoints/
+*.ipynb~
+
+# ----------------------------
+# Data outputs (derived artifacts)
+# ----------------------------
+data/derived/
+data/processed/
+data/tmp/
+
+# Optional: ignore raw data if you do NOT want to commit CSVs
+# data/raw/
+
+# ----------------------------
+# Secrets (commit .env.example, never commit real .env)
+# ----------------------------
+.env
+.env.*
+!.env.example
+
+# ----------------------------
+# Logs
+# ----------------------------
+*.log
+
+# ----------------------------
+# Packaging / build
+# ----------------------------
+build/
+dist/
+*.egg-info/
+
+# ----------------------------
+# Editors / OS
+# ----------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
