@@ -2,7 +2,7 @@
 
 This repo contains the complete SQL walkthrough for the blog post churn series (published on tivon.io):
 
-1) ["We Lost Customers, But Not Revenue (Three churn definitions that explain it)"](https://tivon.io/2026/02/15/we-lost-customers-but-not-revenue/)
+1) ["We Lost Customers, But Not Revenue (Three churn definitions in SQL)"](https://tivon.io/2026/02/15/we-lost-customers-but-not-revenue/)
    - churn definitions + scoreboard (SQL 00-10, notebook 01)
 2) "Why Customers Churn (Linking support tickets and product usage to churn risk)" -> UPCOMING
 
