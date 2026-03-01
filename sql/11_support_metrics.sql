@@ -8,6 +8,15 @@ Significance
     - Explains churn risk by testing signals that appear before churn.
     - Support burden is a common leading indicator and is easy to quantify.
 
+Dependencies
+    - Requires: support_tickets
+        Key columns used:
+            - submitted_at
+            - closed_at
+            - resolution_time_hours
+            - priority
+            -escalation_flag
+
 Output
     - v_support_account_month (one row per account per month)
 
