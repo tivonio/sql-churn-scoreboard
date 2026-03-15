@@ -5,16 +5,22 @@ PURPOSE:
     - Join cohort labels to support and usage metrics.
     - Output summary stats that highlight differences before churn.
 
+Significance
+    - SQL 13 labeled account_months as retained, churn_month, or pre_churn_3m.
+    - SQL 14 is the first direct comparison of prechurn behavior vs retained behavior.
+    - This is the first joined driver table for Post #3.
+
 Dependencies
-    - v_support_account_month (11_support_metrics.sql)
-    - v_usage_account_month (12_usage_metrics.sql)
-    - v_account_month_cohorts (13_prechurn_cohorts.sql)
+    - Requires:
+        - v_support_account_month (11_support_metrics.sql)
+        - v_usage_account_month (12_usage_metrics.sql)
+        - v_account_month_cohorts (13_prechurn_cohorts.sql)
 
 Output
     - v_churn_driver_table_3m
 
 Notes
-    - pre_churn_3m is defined in v_account_month_cohorts (months_to_churn 1-3).
+    - pre_churn_3m is defined in v_account_month_cohorts as months_to_churn between 1 and 3.
     - support and usage are left joined because some account-months may have no tickets or usage rows.
 */
 
