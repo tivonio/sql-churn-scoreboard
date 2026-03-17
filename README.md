@@ -2,7 +2,7 @@
 
 This repo contains the complete SQL walkthrough for the blog post churn series (published on tivon.io):
 
-1) ["We Lost Customers, But Not Revenue (Three churn definitions in SQL)"](https://tivon.io/2026/02/15/we-lost-customers-but-not-revenue/)
+1) ["We Lost Customers, But Not Revenue (Three churn definitions in SQL)"](https://tivon.io/2026/02/11/we-lost-customers-but-not-revenue/)
    - churn definitions + scoreboard (SQL 00-10, notebook 01)
 2) "Why Customers Churn (Linking support tickets and product usage to churn risk)" -> UPCOMING
 
@@ -147,8 +147,8 @@ If diffs are non-zero, stop and debug before interpreting churn.
 ### 1) Clone the repo
 
     cd $HOME
-    git clone https://github.com/tivonio/sql-churn-scoreboard.git
-    cd sql-churn-scoreboard
+    git clone https://github.com/tivonio/sql-churn-analysis.git
+    cd sql-churn-analysis
 
 ### 2) Start PostgreSQL with Docker Compose (recommended)
 
